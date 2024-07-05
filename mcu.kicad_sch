@@ -2077,6 +2077,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 55.88) (xy 203.2 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fda3f04-1be5-4ada-901b-b07e673f7cc5")
+	)
+	(wire
+		(pts
 			(xy 236.22 58.42) (xy 236.22 71.12)
 		)
 		(stroke
@@ -2144,6 +2154,16 @@
 			(type default)
 		)
 		(uuid "7195ec23-74cb-4485-ac86-580233f02fbc")
+	)
+	(wire
+		(pts
+			(xy 104.14 52.07) (xy 104.14 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76e6c194-7758-408d-a9d8-1ac5e8bcaa61")
 	)
 	(wire
 		(pts
@@ -2244,28 +2264,6 @@
 			(type default)
 		)
 		(uuid "f8829356-905b-4874-af13-27ce0064cf15")
-	)
-	(global_label "VCC"
-		(shape input)
-		(at 203.2 58.42 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "02dcaf43-b5bd-47b8-aa72-1b4ec98d187a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 203.2 51.8062 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
 	)
 	(global_label "GND"
 		(shape input)
@@ -2472,28 +2470,6 @@
 		(uuid "46a8d2a5-4411-4dc1-a3b4-8fd120214512")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 96.52 44.1863 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VCC"
-		(shape input)
-		(at 104.14 52.07 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4b1b5940-7279-4b2c-a697-8cd963b2d5bc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 104.14 45.4562 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3208,6 +3184,72 @@
 			(project "hat"
 				(path "/70e6526f-b0a6-4567-9a63-f23f49b44490/42e118b0-10b1-487c-b90c-93b4cb40a9ea"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 104.14 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32a7d976-f950-4181-bd96-7aca30f84f33")
+		(property "Reference" "#PWR013"
+			(at 104.14 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 104.14 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9218a57-5a8f-4977-86fc-7cfb5845dc24")
+		)
+		(instances
+			(project "hat"
+				(path "/70e6526f-b0a6-4567-9a63-f23f49b44490/42e118b0-10b1-487c-b90c-93b4cb40a9ea"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -4002,7 +4044,7 @@
 				)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "100 nF"
 			(at 228.6063 54.61 90)
 			(effects
 				(font
@@ -4047,6 +4089,72 @@
 			(project ""
 				(path "/70e6526f-b0a6-4567-9a63-f23f49b44490/42e118b0-10b1-487c-b90c-93b4cb40a9ea"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 203.2 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc528b46-e4dc-4773-96b6-420b42d0b805")
+		(property "Reference" "#PWR014"
+			(at 203.2 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 203.2 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 203.2 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28183a8a-5731-4346-9ea0-129f32bb9fbb")
+		)
+		(instances
+			(project "hat"
+				(path "/70e6526f-b0a6-4567-9a63-f23f49b44490/42e118b0-10b1-487c-b90c-93b4cb40a9ea"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -4137,7 +4245,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "10k"
 			(at 205.74 62.2299 0)
 			(effects
 				(font
